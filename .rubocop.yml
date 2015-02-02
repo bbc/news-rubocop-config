@@ -1,0 +1,73 @@
+Lint/RescueException:
+  Severity: fatal
+  Enabled: true
+
+Metrics/LineLength:
+  Severity: fatal
+  Enabled: true
+
+Metrics/MethodLength:
+  Severity: convention
+  Enabled: true
+  Max: 5
+
+Style/AlignHash:
+  EnforcedHashRocketStyle: table
+
+Style/BracesAroundHashParameters:
+  Severity: fatal
+  Enabled: true
+
+Style/ConstantName:
+  Severity: fatal
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Severity: fatal
+  Enabled: true
+
+Style/ExtraSpacing:
+  Enabled: false
+
+Style/FileName:
+  Severity: fatal
+  Enabled: true
+
+Style/HashSyntax:
+  Enabled: false
+
+Style/IndentationWidth:
+  Severity: fatal
+  Enabled: true
+
+Style/IndentHash:
+  Severity: fatal
+  Enabled: true
+
+Style/InlineComment:
+  Severity: fatal
+  Enabled: true
+
+Style/LineEndConcatenation:
+  Severity: fatal
+  Enabled: true
+
+Style/MethodName:
+  Severity: fatal
+  Enabled: true
+
+Style/NegatedIf:
+  Severity: fatal
+  Enabled: true
+
+Style/Not:
+  Severity: fatal
+  Enabled: true
+
+Style/VariableName:
+  Severity: fatal
+  Enabled: true
+
