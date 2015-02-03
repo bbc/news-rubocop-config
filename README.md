@@ -21,9 +21,28 @@ ln -s path/to/repo/rubocop-config/.rubocop.yml ~/.rubocop.yml
 
 ## Usage
 
+
+*Single File*:
 ```
 rubocop <file_name>
 ```
+
+*All Files in Project*:
+```
+rubocop
+```
+
+*Attempt to auto-correct offenses (take care!)*
+```
+rubocop -a
+```
+
+*Display Offense Names*:
+```
+rubocop -D
+```
+
+Find out more information about an offense name (e.g. `Style/ClassAndModuleChildren`) by searching for it within [default.yml](https://github.com/bbatsov/rubocop/blob/master/config/default.yml).
 
 ## Output
 
