@@ -33,6 +33,10 @@ Style/BracesAroundHashParameters:
   Severity: fatal
   Enabled: true
 
+ClassAndModuleChildren:
+  Severity: fatal
+  Enabled: true
+
 Style/ConstantName:
   Severity: fatal
   Enabled: true
