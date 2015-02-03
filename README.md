@@ -6,7 +6,18 @@
 
 ## Installation
 
-Add `.rubocop.yml` to the root of your project, or your HOME directory.
+#### Single Project
+
+Add `.rubocop.yml` to the root of your project.
+
+#### Global
+
+1. Clone repo.
+2. Symlink `.rubocop.yml` to HOME directory:
+
+```
+ln -s path/to/repo/rubocop-config/.rubocop.yml ~/.rubocop.yml
+```
 
 ## Usage
 
