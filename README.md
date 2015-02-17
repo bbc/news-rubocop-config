@@ -71,6 +71,11 @@ test.rb:4:5: C: end at 4, 4 is not aligned with if at 2, 2
 1 file inspected, 3 offenses detected
 ```
 
+## Editor Plugins
+
+* **Atom** - [linter-rubocop](https://atom.io/packages/linter-rubocop)
+* **Vim** - [ngmy/vim-rubocop](https://github.com/ngmy/vim-rubocop)
+
 ## Contributing
 
 Any changes to the config should be in-line with the BBC Ruby [Style Guide](https://github.com/BBC-News/responsive-news/wiki/Style-Guide:-Ruby). Feel free to make changes, please make sure to discuss them before hand.
