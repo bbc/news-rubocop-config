@@ -44,6 +44,25 @@ rubocop -D
 
 Find out more information about an offense name (e.g. `Style/ClassAndModuleChildren`) by searching for it within [default.yml](https://github.com/bbatsov/rubocop/blob/master/config/default.yml).
 
+### Docker
+
+A docker container is available for running rubocop with the latest version of the config from:
+
+`$: docker pull bbcnews/rubocop-config`
+
+To run it on a project, use the following command:
+
+`$: docker run -v /path/to/your/code:/app bbcnews/rubocop-config`
+
+> You must mount your code as a volume under `/app`.
+
+#### Additional options
+
+As the entry point to the container is `rubocop` you can pass any of the options along as arguments 
+when running the container. For example to auto correct all files:
+
+`$: docker run -v /path/to/your/code:/app bbcnews/rubocop-config -a`
+
 ## Output
 
 The command shown above will highlight any *offenses* detected within the given file. Any marked with:
