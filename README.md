@@ -6,7 +6,9 @@
 
 ## Installation
 
-#### Single Project
+#### Simple (not-recommended)
+
+> Note: if you use this method then you fill have to manually re-download the file.
 
 Add `.rubocop.yml` to the root of your project.
 
