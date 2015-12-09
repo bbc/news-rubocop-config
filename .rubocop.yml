@@ -98,6 +98,9 @@ Style/Not:
   Severity: fatal
   Enabled: true
 
+StyleRaiseArgs:
+  Enabled: false
+
 Style/SpaceInsideHashLiteralBraces:
   Severity: fatal
   Enabled: true
@@ -118,4 +121,3 @@ Style/TrailingWhitespace:
 Style/VariableName:
   Severity: fatal
   Enabled: true
-
