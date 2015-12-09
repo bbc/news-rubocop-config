@@ -98,7 +98,7 @@ Style/Not:
   Severity: fatal
   Enabled: true
 
-StyleRaiseArgs:
+Style/RaiseArgs:
   Enabled: false
 
 Style/SpaceInsideHashLiteralBraces:
