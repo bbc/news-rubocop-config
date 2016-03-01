@@ -103,4 +103,4 @@ Any changes to the config should be in-line with the BBC Ruby [Style Guide](http
 
 ## Help
 
-**Ping [@revett](https://github.com/revett)**.
+**Email [News Frameworks](mailto:digitalnewsframeworksteam@bbc.co.uk)**.
