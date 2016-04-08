@@ -65,6 +65,28 @@ when running the container. For example to auto correct all files:
 
 `$: docker run -v /path/to/your/code:/app bbcnews/rubocop-config -a`
 
+#### Git Hook
+
+You can setup your git repos to utilise the `pre-commit` git hook like so:
+
+https://github.com/Integralist/Shell-Scripts/blob/master/hooks/pre-commit-rubocop
+
+#### Shell Alias
+
+The following bash shell function demonstrates how you can test any Ruby code quickly with the `rubo` alias command:
+
+```bash
+function rubo() {
+  docker run \
+    --cpu-shares 1024 \
+    --rm=true \
+    --volume $(pwd):/app \
+    bbcnews/rubocop-config --format simple --fail-level F | grep '^F:\|=='
+}
+```
+
+> Note: the function has been configured to filter out all feedback except for FATAL errors
+
 ## Output
 
 The command shown above will highlight any *offenses* detected within the given file. Any marked with:
@@ -94,8 +116,8 @@ test.rb:4:5: C: end at 4, 4 is not aligned with if at 2, 2
 
 ## Editor Plugins
 
-* **Atom** - [linter-rubocop](https://atom.io/packages/linter-rubocop)
-* **Vim** - [ngmy/vim-rubocop](https://github.com/ngmy/vim-rubocop)
+- **Atom** - [linter-rubocop](https://atom.io/packages/linter-rubocop)
+- **Vim** - [ngmy/vim-rubocop](https://github.com/ngmy/vim-rubocop)
 
 ## Contributing
 
