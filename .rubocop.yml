@@ -1,10 +1,10 @@
 AllCops:
+  TargetRubyVersion: 1.9
   Exclude:
     - "**/*.gemspec"
 
-Lint/SpaceBeforeFirstArg:
-  Severity: fatal
-  Enabled: true
+Style/SpaceBeforeFirstArg:
+  Enabled: false
 
 Lint/RescueException:
   Severity: fatal
@@ -27,6 +27,7 @@ Style/AlignHash:
   Severity: fatal
   Enabled: true
   EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 
 Style/AlignParameters:
   Severity: fatal
@@ -61,7 +62,7 @@ Style/FileName:
 Style/HashSyntax:
   Severity: fatal
   Enabled: true
-  EnforcedStyle: hash_rockets
+  EnforcedStyle: ruby19_no_mixed_keys
 
 Style/IndentationConsistency:
   Severity: fatal
@@ -74,10 +75,10 @@ Style/IndentationWidth:
 Style/IndentHash:
   Severity: fatal
   Enabled: true
+  EnforcedStyle: consistent
 
 Style/InlineComment:
-  Severity: fatal
-  Enabled: true
+  Enabled: false
 
 Style/LineEndConcatenation:
   Severity: fatal
@@ -108,7 +109,7 @@ Style/SpaceInsideHashLiteralBraces:
 Style/StringLiterals:
   Severity: fatal
   Enabled: true
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 Style/TrailingBlankLines:
   Severity: fatal
@@ -121,3 +122,21 @@ Style/TrailingWhitespace:
 Style/VariableName:
   Severity: fatal
   Enabled: true
+
+Metrics/LineLength:
+  Description: 'Limit lines to 120 characters.'
+  Max: 120
+
+Style/CollectionMethods:
+  Severity: fatal
+  PreferredMethods:
+    collect: 'map'
+    collect!: 'map!'
+    inject: 'reduce'
+    detect: 'find'
+    find_all: 'select'
+
+Style/DotPosition:
+  Severity: fatal
+  EnforcedStyle: leading
+
