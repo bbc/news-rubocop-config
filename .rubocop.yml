@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 1.9
   Exclude:
     - '**/*.gemspec'
-    - 'vendor/**/*'
+    - '**/vendor/**/*'
 
 Style/SpaceBeforeFirstArg:
   Enabled: false
