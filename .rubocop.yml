@@ -1,10 +1,10 @@
 AllCops:
-  TargetRubyVersion: 1.9
+  TargetRubyVersion: 2.3
   Exclude:
     - '**/*.gemspec'
     - '**/vendor/**/*'
 
-Style/SpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
 
 Lint/RescueException:
@@ -24,13 +24,13 @@ Metrics/MethodLength:
   Enabled: true
   Max: 5
 
-Style/AlignHash:
+Layout/AlignHash:
   Severity: fatal
   Enabled: true
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
-Style/AlignParameters:
+Layout/AlignParameters:
   Severity: fatal
   Enabled: true
   EnforcedStyle: with_fixed_indentation
@@ -43,21 +43,21 @@ ClassAndModuleChildren:
   Severity: fatal
   Enabled: true
 
-Style/ConstantName:
+Naming/ConstantName:
   Severity: fatal
   Enabled: true
 
 Style/Documentation:
   Enabled: false
 
-Style/EmptyLinesAroundClassBody:
+Layout/EmptyLinesAroundClassBody:
   Severity: fatal
   Enabled: true
 
-Style/ExtraSpacing:
+Layout/ExtraSpacing:
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Enabled: false
 
 Style/HashSyntax:
@@ -65,15 +65,15 @@ Style/HashSyntax:
   Enabled: true
   EnforcedStyle: ruby19_no_mixed_keys
 
-Style/IndentationConsistency:
+Layout/IndentationConsistency:
   Severity: fatal
   Enabled: true
 
-Style/IndentationWidth:
+Layout/IndentationWidth:
   Severity: fatal
   Enabled: true
 
-Style/IndentHash:
+Layout/IndentHash:
   Severity: fatal
   Enabled: true
   EnforcedStyle: consistent
@@ -85,7 +85,7 @@ Style/LineEndConcatenation:
   Severity: fatal
   Enabled: true
 
-Style/MethodName:
+Naming/MethodName:
   Severity: fatal
   Enabled: true
 
@@ -103,7 +103,7 @@ Style/Not:
 Style/RaiseArgs:
   Enabled: false
 
-Style/SpaceInsideHashLiteralBraces:
+Layout/SpaceInsideHashLiteralBraces:
   Severity: fatal
   Enabled: true
 
@@ -112,15 +112,15 @@ Style/StringLiterals:
   Enabled: true
   EnforcedStyle: single_quotes
 
-Style/TrailingBlankLines:
+Layout/TrailingBlankLines:
   Severity: fatal
   Enabled: true
 
-Style/TrailingWhitespace:
+Layout/TrailingWhitespace:
   Severity: fatal
   Enabled: true
 
-Style/VariableName:
+Naming/VariableName:
   Severity: fatal
   Enabled: true
 
@@ -137,7 +137,7 @@ Style/CollectionMethods:
     detect: 'find'
     find_all: 'select'
 
-Style/DotPosition:
+Layout/DotPosition:
   Severity: fatal
   EnforcedStyle: leading
 
