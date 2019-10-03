@@ -16,7 +16,9 @@ Lint/UnusedBlockArgument:
   Enabled: true
 
 Metrics/LineLength:
+  Description: "Limit lines to 120 characters."
   Severity: fatal
+  Max: 120
   Enabled: true
 
 Metrics/MethodLength:
@@ -73,7 +75,7 @@ Layout/IndentationWidth:
   Severity: fatal
   Enabled: true
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   Severity: fatal
   Enabled: true
   EnforcedStyle: consistent
@@ -123,10 +125,6 @@ Layout/TrailingWhitespace:
 Naming/VariableName:
   Severity: fatal
   Enabled: true
-
-Metrics/LineLength:
-  Description: 'Limit lines to 120 characters.'
-  Max: 120
 
 Style/CollectionMethods:
   Severity: fatal
